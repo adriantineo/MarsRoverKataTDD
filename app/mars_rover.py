@@ -7,4 +7,9 @@ class MarsRover(object):
         self.position = (self.x, self.y)
         self.orientation = "N"
 
+    def getPosition(self):
+        return (self.x, self.y)
+
+
+
 

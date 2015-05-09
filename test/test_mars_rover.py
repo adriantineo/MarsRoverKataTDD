@@ -6,13 +6,10 @@ class MarsRoverTester(unittest.TestCase):
         self.mr = MarsRover()
 
     def test_initial_position(self):
-        self.assertEqual(self.mr.position, (0,0))
+        self.assertEqual(self.mr.getPosition(), (0,0))
 
     def test_initial_orientation(self):
         self.assertEqual(self.mr.orientation, "N")
-
-    def test_move_N(self):
-        self.assertEqual(self.mr.moveN().position, (0,1))
 
     def tearDown(self):
         pass
