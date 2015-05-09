@@ -13,6 +13,9 @@ class MarsRover():
     def getOrientation(self):
         return self.orientation
 
+    def turnLeft(self):
+        self.orientation = "E"
+
     def moveF(self):
         if self.y < self.grid.getSize()[1] -1:
             self.y += 1
