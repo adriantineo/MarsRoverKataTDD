@@ -20,6 +20,8 @@ class MarsRover():
     def turnLeft(self):
         if self.orientation == "N":
             self.orientation = "W"
+        elif self.orientation == "W":
+            self.orientation = "S"
 
     def moveF(self):
         if self.y < self.grid.getSize()[1] -1:
