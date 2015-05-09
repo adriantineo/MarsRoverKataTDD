@@ -1,10 +1,11 @@
 
 
-class MarsRover(object):
-    def __init__(self):
+class MarsRover():
+    def __init__(self, grid):
         self.x = 0
         self.y = 0
         self.orientation = "N"
+        self.grid = grid
 
     def getPosition(self):
         return (self.x, self.y)
@@ -15,4 +16,6 @@ class MarsRover(object):
     def moveN(self):
         self.y += 1
 
+    def getGrid(self):
+        return self.grid
 

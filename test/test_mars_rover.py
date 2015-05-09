@@ -4,7 +4,8 @@ from app.grid import Grid
 
 class MarsRoverTester(unittest.TestCase):
     def setUp(self):
-        self.mr = MarsRover()
+        self.grid = Grid()
+        self.mr = MarsRover(self.grid)
 
     def test_initial_position(self):
         self.assertEqual(self.mr.getPosition(), (0,0))
@@ -17,7 +18,6 @@ class MarsRoverTester(unittest.TestCase):
         self.assertEqual(self.mr.getPosition(), (0,1))
 
     def test_size_of_grid(self):
-        self.grid = Grid()
         self.assertEqual(self.grid.getSize(), (100,100))
 
     def test_wrap_the_grid_N(self):
