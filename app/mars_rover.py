@@ -4,24 +4,21 @@ class MarsRover():
     def __init__(self, grid):
         self.x = 0
         self.y = 0
-        self.orientation = "N"
+        self.orientationVector = ["N", "E", "S", "W"]
+        self.orientationIdx = 0
         self.grid = grid
 
     def getPosition(self):
         return (self.x, self.y)
 
     def getOrientation(self):
-        return self.orientation
+        return self.orientationVector[self.orientationIdx]
 
     def turnRight(self):
-        if self.orientation == "N":
-            self.orientation = "E"
+        self.orientationIdx = (self.orientationIdx + 1) % len(self.orientationVector)
 
     def turnLeft(self):
-        if self.orientation == "N":
-            self.orientation = "W"
-        elif self.orientation == "W":
-            self.orientation = "S"
+        self.orientationIdx = (self.orientationIdx - 1) % len(self.orientationVector)
 
     def moveF(self):
         if self.y < self.grid.getSize()[1] -1:
