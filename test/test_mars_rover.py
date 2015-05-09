@@ -21,9 +21,8 @@ class MarsRoverTester(unittest.TestCase):
         self.assertEqual(self.grid.getSize(), (100,100))
 
     def test_wrap_the_grid_N(self):
-        self.grid = Grid()
         initial_position = self.mr.getPosition()
-        for i in range(initial_position[1], self.grid.getSize()[1]):
+        for i in range(initial_position[1], self.mr.getGrid().getSize()[1]):
             self.mr.moveN()
         self.assertEquals(self.mr.getPosition(), initial_position)
 
