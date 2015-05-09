@@ -1,11 +1,11 @@
 TODO:
-- Given that the rover is located at 0,0 facing North on a 100x100 grid,
+-> Given that the rover is located at 0,0 facing North on a 100x100 grid,
 the command "ffrff" would put the rover at 2,2 facing East
 # Face W
 # Face S turning left
-->Face S turning right
-- Face N turning left
-- Face N turning right
+# Face S turning right
+# Face N turning left
+# Face N turning right
 # Face E
 # Face N
 # Move the rover N

@@ -61,5 +61,15 @@ class MarsRoverTester(unittest.TestCase):
             self.mr.moveF()
         self.assertEquals(self.mr.getPosition(), initial_position)
 
+    def test_sequence_FFRFF(self):
+        self.mr.moveF()
+        self.mr.moveF()
+        self.mr.turnRight()
+        self.mr.moveF()
+        self.mr.moveF()
+        self.assertEqual(self.mr.getPosition(), (2, 2))
+        self.assertEqual(self.mr.getOrientation(), "E")
+
+
     def tearDown(self):
         pass
