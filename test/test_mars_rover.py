@@ -5,8 +5,8 @@ class MarsRoverTester(unittest.TestCase):
     def setUp(self):
         self.mr = MarsRover()
 
-    def test_move_forward(self):
-        pass
+    def test_initial_position(self):
+        self.assertEqual(self.mr.position,(0,0))
 
     def tearDown(self):
         pass
