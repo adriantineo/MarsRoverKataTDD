@@ -18,7 +18,7 @@ class MarsRoverTester(unittest.TestCase):
 
     def test_size_of_grid(self):
         self.grid = Grid()
-        self.assertEqual(self.grid.size, (100,100))
+        self.assertEqual(self.grid.getSize(), (100,100))
 
     def tearDown(self):
         pass
