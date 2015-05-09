@@ -14,7 +14,7 @@ class MarsRover():
         return self.orientation
 
     def moveN(self):
-        if self.y < 100 -1:
+        if self.y < self.grid.getSize()[1] -1:
             self.y += 1
         else:
             self.y = 0
