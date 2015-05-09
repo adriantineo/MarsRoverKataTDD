@@ -1,12 +1,13 @@
 TODO:
 - Given that the rover is located at 0,0 facing North on a 100x100 grid,
 the command "ffrff" would put the rover at 2,2 facing East
+-> Face N
 # Move the rover N
 # Init the rover at 0,0
 # Init the rover to face N
 # Get position
 # Get orientation
--> Wrap the grid
+# Wrap the grid
 # Size of grid
 X Grid in rover (WATCH OUT: this would be testing the implementation!)
 

@@ -13,8 +13,11 @@ class MarsRoverTester(unittest.TestCase):
     def test_initial_orientation(self):
         self.assertEqual(self.mr.getOrientation(), "N")
 
-    def test_move_N(self):
-        self.mr.moveN()
+    def test_face_N(self):
+        self.assertEqual(self.mr.getOrientation(), "N")
+
+    def test_move_F(self):
+        self.mr.moveF()
         self.assertEqual(self.mr.getPosition(), (0,1))
 
     def test_size_of_grid(self):
@@ -23,7 +26,7 @@ class MarsRoverTester(unittest.TestCase):
     def test_wrap_the_grid_N(self):
         initial_position = self.mr.getPosition()
         for i in range(initial_position[1], self.mr.getGrid().getSize()[1]):
-            self.mr.moveN()
+            self.mr.moveF()
         self.assertEquals(self.mr.getPosition(), initial_position)
 
     def tearDown(self):
