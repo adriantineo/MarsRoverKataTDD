@@ -4,7 +4,6 @@ the command "ffrff" would put the rover at 2,2 facing East
 - Move the rover N
 # Init the rover at 0,0
 # Init the rover to face N
-- Get position
-- Get orientation
+# Get position
+# Get orientation
 
-DONE:
