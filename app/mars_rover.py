@@ -2,4 +2,6 @@
 
 class MarsRover(object):
     def __init__(self):
-        pass
+        self.position = (0, 0)
+
+
