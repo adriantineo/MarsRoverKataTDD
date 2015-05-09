@@ -13,7 +13,7 @@ class MarsRover():
     def getOrientation(self):
         return self.orientation
 
-    def turnLeft(self):
+    def turnRight(self):
         if self.orientation == "N":
             self.orientation = "E"
 
