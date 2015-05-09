@@ -2,6 +2,8 @@
 
 class MarsRover(object):
     def __init__(self):
-        self.position = (0, 0)
+        self.x = 0
+        self.y = 0
+        self.position = (self.x, self.y)
 
 

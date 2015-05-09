@@ -2,7 +2,7 @@ TODO:
 - Given that the rover is located at 0,0 facing North on a 100x100 grid,
 the command "ffrff" would put the rover at 2,2 facing East
 - Move the rover forward
-- Init the rover at 0,0
+# Init the rover at 0,0
 - Init the rover to face N
 
 DONE:
