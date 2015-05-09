@@ -12,4 +12,7 @@ class MarsRover(object):
     def getOrientation(self):
         return self.orientation
 
+    def moveN(self):
+        self.y += 1
+
 

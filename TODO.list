@@ -6,4 +6,5 @@ the command "ffrff" would put the rover at 2,2 facing East
 # Init the rover to face N
 # Get position
 # Get orientation
+- Wrap the grid
 
