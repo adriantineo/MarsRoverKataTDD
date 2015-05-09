@@ -16,6 +16,10 @@ class MarsRoverTester(unittest.TestCase):
     def test_face_N(self):
         self.assertEqual(self.mr.getOrientation(), "N")
 
+    def test_face_E(self):
+        self.mr.turnLeft()
+        self.assertEqual(self.mr.getOrientation(), "E")
+
     def test_move_F(self):
         self.mr.moveF()
         self.assertEqual(self.mr.getPosition(), (0,1))
