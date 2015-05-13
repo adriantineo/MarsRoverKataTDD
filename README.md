@@ -1,0 +1,1 @@
+A small exercise in python to experiment with Test-Driven Development (TDD) as a development technique. Inspired by the experiment at: https://blog.deltaforce.io/wordpress/running-a-coding-dojo-to-improve-python-tdd-skills/
