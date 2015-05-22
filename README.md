@@ -10,10 +10,10 @@ Thank you to all the participants for their interesting remarks
 and for sharing their experience.
 
 You can access right here the audio (tdd_zen_of_programming_talk.mp3)
-and the slides (tdd_zen_of_programming_talk.pdf)
+and the slides (tdd_zen_of_programming_slides.pdf)
 from the presentation and discussion part of the session.
 
-Feel free to contact me at me@adriantineo.com
+Feel free to contact me at me -at- adriantineo.com
 with comments or suggestions.
 
 Enjoy!
